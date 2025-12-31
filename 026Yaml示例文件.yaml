@@ -1,0 +1,19 @@
+basedata:
+  ip: &base "192.168.1.12"
+
+testbase:
+  test:
+    data:
+      url_ip1: *base
+
+  test2:
+    data2:
+      ip3: *base
+
+
+
+
+
+
+
+
