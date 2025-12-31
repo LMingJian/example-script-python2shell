@@ -1,0 +1,9 @@
+[Unit]
+Description=Run memory monitor every minute
+
+[Timer]
+OnCalendar=*:0/1
+Unit=memory_monitor.service
+
+[Install]
+WantedBy=timers.target
