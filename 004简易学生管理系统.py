@@ -1,7 +1,9 @@
 """
 Q: 实现一个简单的学生管理系统，能对学生的信息进行增删查改
+
 A: 实现对学生信息的增删查改，退出程序不保存信息。使用控制台展示信息
-PS: 如要保存信息，可以使用file.write()的方法将结果写入文件以进行保存或恢复
+
+PS: 如要保存信息，可以使用 file.write() 的方法将结果写入文件以进行保存或恢复
 """
 
 
@@ -151,8 +153,10 @@ class System:
             print('===============')
             print('没有该学号学生')
             print('===============')
+            return None
         else:
             print('抱歉，查找不到数据')
+            return None
 
     def search(self):
         if self.studentList:
@@ -175,8 +179,10 @@ class System:
             print('===============')
             print('没有该学号学生')
             print('===============')
+            return None
         else:
             print('抱歉，查找不到数据')
+            return None
 
     def revise(self):
         if self.studentList:
@@ -193,8 +199,10 @@ class System:
             print('===============')
             print('没有该学号学生')
             print('===============')
+            return None
         else:
             print('抱歉，查找不到数据')
+            return None
 
     def display(self):
         if self.studentList:

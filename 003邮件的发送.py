@@ -5,8 +5,9 @@ from smtplib import SMTP_SSL
 
 def send_email(sender_qq, pwd, sender, receiver, mail_content, mail_title):
     """
-    Q: 如何利用Python使用QQ邮箱发送邮件
-    A: 使用邮箱的IMAP/SMTP服务，利用Python的email模块进行邮件发送
+    Q: 如何利用 Python 使用 QQ 邮箱发送邮件
+
+    A: 使用邮箱的 IMAP/SMTP 服务，利用 Python 的 email 模块进行邮件发送
     """
     host_server = 'smtp.qq.com'
     smtp = SMTP_SSL(host_server)  # SSL登录smtp服务器
@@ -25,6 +26,7 @@ def send_email(sender_qq, pwd, sender, receiver, mail_content, mail_title):
 
 if __name__ == "__main__":
     try:
-        send_email('qq号', '授权码', '本人@qq.com', '收件@qq.com', '邮件内容', '标题')
+        send_email('qq号', '授权码', '本人@qq.com',
+                   '收件@qq.com', '邮件内容', '标题')
     except BaseException as e:
         print(e)

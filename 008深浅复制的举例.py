@@ -33,6 +33,9 @@ def deep_copy():
     print([id(ele) for ele in will1])
 
 
+deep_copy()
+
+
 def shallow_copy():
     """
     Q: 什么是浅复制
@@ -65,11 +68,8 @@ def shallow_copy():
     print([id(ele) for ele in will1])
 
 
+shallow_copy()
+
+
 if __name__ == "__main__":
-    flag = input('请选择实例(1.深复制/2.浅复制): ')
-    if flag == '1':
-        deep_copy()
-    elif flag == '2':
-        shallow_copy()
-    else:
-        pass
+    pass
