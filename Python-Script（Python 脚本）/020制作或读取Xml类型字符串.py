@@ -48,7 +48,7 @@ if __name__ == '__main__':
             xml.create_node('xxx', 12),
             xml.create_node('ppp', 455)]),
         xml.create_node('age', 12),
-        xml.create_node('school', 'HiSon')])
+        xml.create_node('school', 'School')])
     print(node)
     print(xml.make_xml(node))
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 <response>
 <lang>
 <type>0</type>
-<lan>Chinese9</lan>
+<lan>Chinese</lan>
 </lang>
 </response>
     """
